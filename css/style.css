@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*
+Variables
+*/
+:root {
+    --dark-blue: #1F2937;
+    --blue: #3882F6;
+    --white: #F9FAF8;
+    --gray: #E5E7EB;
+    --roboto: 'Roboto', sans-serif;
+    --container-width: 65vw;
+}
+
+/*Universal styles*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--roboto);
+    background: var(--dark-blue);
+}
+
+a,
+a:visited,
+a:active{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+/*Header Styles*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.nav-links-container {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+/*Hero Section*/
+.hero-section {
+    min-height: 95vh;
+    display: flex;
+    gap: 2rem;
+    padding: 9rem;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.hero-section-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.hero-section-paragraph {
+    font-size: 1.125rem;
+    color: var(--gray);
+}
+
+.hero-signup-button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    padding: 1rem 2rem;
+}
+
+.hero-signup-button:hover {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.hero-image {
+    display: flex;
+    flex: 1;
+    background-color: var(--gray);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+/*Information Section Styles*/
+.information {
+    background: var(--white);
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: var(--container-width);
+    margin: auto;
+    padding: 4rem 0 9rem;
+}
+
+.information-heading {
+    text-align: center;
+    font: 900 2.25rem var(--roboto);
+    color: var(--dark-blue);
+}
+
+.sub-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.subcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+}
+
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--blue);
+    border-radius: 0.5rem;
+}
+
+.image-description {
+    font-size: 1.125rem;
+}
+
+/*Quote Section Style*/
+.quote-section {
+    background: var(--gray);
+}
+
+.quote-container {
+    padding: 7rem 0;
+    width: var(--container-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial {
+    font: 200 2.25rem var(--roboto);
+    color: var(--dark-blue);
+    font-style: italic;
+}
+
+.person {
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--dark-blue);
+}
+
+/*Call to Action (CTA) Styles*/
+.cta {
+    background: var(--white);
+}
+
+.cta-positioning-container {
+    width: var(--container-width);
+    margin: auto;
+    padding: 6rem 0;
+}
+
+.cta-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--blue);
+    padding: 2rem 7rem;
+    border-radius: 0.5rem;
+}
+
+.cta-title,
+.cta-paragraph {
+    color: var(--white);
+}
+
+.cta-title {
+    font-weight: 600;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 0.5rem;
+}
+
+.cta-button:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+/*Footer Section Styles*/
+.copyright-container {
+    width: var(--container-width);
+    margin: auto;
+}
+
+.copyright {
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 0;
+}

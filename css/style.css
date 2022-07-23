@@ -34,11 +34,16 @@ a:active{
 }
 
 /*Header Styles*/
+header {
+    width: var(--container-width);
+    margin: auto;
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 9rem;
+    padding: 2rem 0;
 }
 
 .logo {
@@ -55,10 +60,12 @@ a:active{
 
 /*Hero Section*/
 .hero-section {
-    min-height: 95vh;
+    height: 95vh;
     display: flex;
     gap: 2rem;
-    padding: 9rem;
+    width: 80vw;
+    align-items: center;
+    margin: auto;
 }
 
 .hero-title {
@@ -95,6 +102,7 @@ a:active{
 }
 
 .hero-image {
+    height: 55%;
     display: flex;
     flex: 1;
     background-color: var(--gray);
@@ -114,7 +122,7 @@ a:active{
     gap: 3rem;
     width: var(--container-width);
     margin: auto;
-    padding: 4rem 0 9rem;
+    padding: 4rem 0 9rem 0;
 }
 
 .information-heading {
